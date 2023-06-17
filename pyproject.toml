@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hw6"
+version = "0.1.0"
+description = ""
+authors = ["Taras55001 <taras5500@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+faker = "^18.10.1"
+psycopg2 = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
