@@ -1,7 +1,6 @@
 import sqlite3
-import os
 from datetime import datetime, date, timedelta
-from random import randint, choice
+from random import randint
 from typing import List
 
 from faker import Faker
@@ -19,6 +18,7 @@ subjects = [
     "Механіка рідини і газу",
     "Фізика"
 ]
+
 task_dict = {"select-1.sql":"1.Знайти 5 студентів із найбільшим середнім балом з усіх предметів.",
              "select-2.sql":"2.Знайти студента із найвищим середнім балом з певного предмета.",
              "select-3.sql":"3.Знайти середній бал у групах з певного предмета.",
@@ -29,6 +29,7 @@ task_dict = {"select-1.sql":"1.Знайти 5 студентів із найбі
              "select-8.sql":"8.Знайти середній бал, який ставить певний викладач зі своїх предметів.",
              "select-9.sql":"9.Знайти список курсів, які відвідує студент.",
              "select-10.sql":"10.Список курсів, які певному студенту читає певний викладач."}
+
 groups = ["ФФ-11", "GoIt-12", "ЕМ-10"]
 
 NUMBERS_TEACHERS = 5
